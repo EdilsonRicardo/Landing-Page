@@ -10,28 +10,165 @@ body{
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
 }
+main {
+    background-image: url(imagens/background.jpg);   
+}
 
 .Container{
     margin: 0 auto;
-    background-color: blue;
+    /* background-color: #7f0; */
 }
 
 .Flex {
     display: flex;
     justify-content: space-between;
+    /* background-color: #a9a9a9; */
   }
 
-#logo img{
-    width: 117px;
-   height: 85.75px;
+
+
+
+/* Topo do site */
+#botaoTopo {
+    /* A linhaFixa um elemento permanentemente na pagina */
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
 
-nav ul{
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+header{
+    height: 60px;
+}
+
+#logo img{
+    width: 72px;
+    height: 40.75px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#profilePhoto img{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    border-color: #fff;
+    border-width: 5px;
+    border-style: solid;
+}
+
+/* ESTILOS DE TEXTOS NA MAIN */
+h1, h2{
+    text-align: center;
+}
+
+h1{
+    padding: 20px;
+    font-size: 4.5em;
+}
+
+
+#check{
+    display: none;
+}
+label{
+    font-size: 3em;
+    padding-right: 15px;
+}
+#barraMenu {
     /* REmocao de bullets */
     list-style: none;
+    background-color: #343538;
+    height: 100vh;
+    position: fixed;
+    top: 50px;
+    /* Esconde o menu */
+    right: -100%;
+    width: 100%;
+    transition: all 0.4s;
 }
 
-nav ul li a{
-    /* Remocao de tracejado */
+#check:checked ~ #barraMenu{
+    right: 0;
+}
+#barraMenu li{
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+}
+#barraMenu li a{
+    /* Remocao de sublinhado */
     text-decoration: none;
+    color: #fff;
+}
+
+
+/* Smartphone landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 576px){
+   
+
+    /* Layout */
+    .Container{
+        max-width: 540px;
+    }
+    header{
+        height: 80px;
+    }
+}
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px){
+    
+     /* Layout */
+     .Container{
+        max-width: 720px;
+    }
+
+}
+/* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px){
+    
+     /* Layout */
+     .Container{
+        max-width: 960px;
+    }
+}
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px){
+    
+     /* Layout */
+     .Container{
+        max-width: 1140px;
+    }
+
+    header{
+        height: 120px;
+    }
+
+    /* Cabeçalho */
+    label {
+        display: none;
+    }
+
+    #barraMenu{
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 50px;
+    }
+
+    #barraMenu li{
+        float: left;
+        border: 0;
+    }
+
+    #barraMenu li a{
+        color: #343538;
+    }
+    #barraMenu li a:hover{
+        color: #c00000;
+    }
+    #logo img{
+    width: 125px;
+    height: 93.75px;
+    margin-top: 10px;
+    }
 }
