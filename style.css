@@ -11,7 +11,14 @@ body{
     font-size: 1em;
 }
 main {
+    height: 75vh;
     background-image: url(imagens/background.jpg);   
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .Container{
@@ -55,16 +62,18 @@ header{
     border-color: #fff;
     border-width: 5px;
     border-style: solid;
+    
 }
 
 /* ESTILOS DE TEXTOS NA MAIN */
 h1, h2{
-    text-align: center;
+    
 }
 
 h1{
     padding: 20px;
     font-size: 4.5em;
+    
 }
 h2{
     padding-bottom: 60px;
@@ -160,7 +169,8 @@ label{
 
     #barraMenu li{
         float: left;
-        border: 0;
+        border-style: outset;
+        /* border: 0; */
     }
 
     #barraMenu li a{
