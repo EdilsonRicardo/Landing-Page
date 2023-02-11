@@ -6,12 +6,14 @@
     border: 0;
     padding: 0;
 }
+
 body{
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
 }
+
 main {
-    height: 75vh;
+    /* height: 140vh;  */
     background-image: url(imagens/background.jpg);   
     background-size: cover;
     display: flex;
@@ -32,9 +34,18 @@ main {
     /* background-color: #a9a9a9; */
   }
 
+  .Flex3{
+    display: flex;
+    flex-direction: column;
+  }
 
-
-
+  .About, .Technologies{
+    width: 365px;
+  }
+  .Section1{
+    display: flex;
+    flex-direction: column;
+  }
 /* Topo do site */
 #botaoTopo {
     /* A linhaFixa um elemento permanentemente na pagina */
@@ -75,20 +86,22 @@ h1{
     font-size: 4.5em;
     
 }
+
 h2{
     padding-bottom: 60px;
 }
 
-
 #check{
     display: none;
 }
+
 label{
     font-size: 3em;
     padding-right: 15px;
 }
+
 #barraMenu {
-    /* REmocao de bullets */
+    /* Remocao de bullets */
     list-style: none;
     background-color: #343538;
     height: 100vh;
@@ -100,17 +113,32 @@ label{
     transition: all 0.4s;
 }
 
+/* Mostra o menu apos clicar em "#check" */
 #check:checked ~ #barraMenu{
     right: 0;
 }
+
 #barraMenu li{
     padding: 20px;
     border-bottom: 1px solid #a9a9a9;
 }
+
 #barraMenu li a{
     /* Remocao de sublinhado */
     text-decoration: none;
     color: #fff;
+}
+section h2{
+    padding-bottom: 0;
+    text-align: center;
+}
+section{
+    padding: 10px;
+    /* text-align: center; */
+}
+
+.Technologies img{
+    width: 40px; 
 }
 
 
@@ -125,6 +153,10 @@ label{
     header{
         height: 80px;
     }
+    main{
+        height: 130vh;
+    }
+
 }
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px){
@@ -132,6 +164,10 @@ label{
      /* Layout */
      .Container{
         max-width: 720px;
+    }
+
+    main{
+        height: 50vh;
     }
 
 }
@@ -142,6 +178,10 @@ label{
      .Container{
         max-width: 960px;
     }
+
+    main{
+        height: 75vh;
+    }
 }
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px){
@@ -150,6 +190,11 @@ label{
      .Container{
         max-width: 1140px;
     }
+    .Flex2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
 
     header{
         height: 120px;
@@ -168,6 +213,7 @@ label{
     }
 
     #barraMenu li{
+        /* Faz os campos de menu ficarem na horizontal */
         float: left;
         border-style: outset;
         /* border: 0; */
@@ -176,12 +222,15 @@ label{
     #barraMenu li a{
         color: #343538;
     }
+
     #barraMenu li a:hover{
         color: #c00000;
     }
+
     #logo img{
     width: 125px;
     height: 93.75px;
     margin-top: 10px;
     }
+
 }
