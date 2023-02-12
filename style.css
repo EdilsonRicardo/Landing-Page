@@ -14,19 +14,20 @@ body{
 
 main {
     /* height: 140vh;  */
-    background-image: url(imagens/background.jpg);   
+    background-image: url(imagens/background.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
 
 footer{
     background-color: #343538;
-    
-    
+
+
 }
 
 .Container{
@@ -52,13 +53,14 @@ footer{
   .Flex4{
     display: flex;
     flex-direction: row;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     padding: 10px 0;
   }
 
   .About, .Technologies{
     width: 350px;
+    padding-left: 10px;
     text-align: center;
   }
 
@@ -153,23 +155,24 @@ section h2{
     text-align: center;
 }
 section{
-    padding: 10px;
+    /* padding: 10px; */
     /* text-align: center; */
 }
 
 .Technologies img{
-    width: 35px; 
+    width: 35px;
     /* padding-bottom: 15px; */
 }
 
 
 /* Smartphone landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){
-   
+
 
     /* Layout */
     .Container{
         max-width: 540px;
+        
     }
     header{
         height: 80px;
@@ -182,12 +185,13 @@ section{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        text-align: center;
       }
 
 }
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px){
-    
+
      /* Layout */
      .Container{
         max-width: 720px;
@@ -206,7 +210,7 @@ section{
 }
 /* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px){
-    
+
      /* Layout */
      .Container{
         max-width: 960px;
@@ -218,7 +222,7 @@ section{
 }
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px){
-    
+
      /* Layout */
      .Container{
         max-width: 1140px;
@@ -258,7 +262,7 @@ section{
     }
 
     #barraMenu li a:hover{
-        color: #c00000;
+        color: rgb(8, 182, 182);
     }
 
     #logo img{
