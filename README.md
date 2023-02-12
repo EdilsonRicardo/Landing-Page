@@ -1,2 +1,2 @@
-# Landing Page
- Criação de Landing Page.
+# Landing Page - Em Progresso.
+ Criação de Landing Page. 
