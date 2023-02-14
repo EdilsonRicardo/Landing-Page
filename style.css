@@ -24,10 +24,9 @@ main {
 
 }
 
-footer{
-    background-color: #343538;
-
-
+address {
+    background-color: #4a4b4e;
+    /* font-size: 0.7em; */
 }
 
 .Container{
@@ -58,10 +57,26 @@ footer{
     padding: 10px 0;
   }
 
+  .Flex5{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
   .About, .Technologies{
     width: 350px;
     text-align: center;
 
+  }
+
+  .About{
+    /* background-color: red; */
+    /* width: 450px; */
+  }
+
+  .Technologies{
+    /* background-color: blue; */
+    width: 200px;
   }
 
   .Section1{
@@ -76,6 +91,37 @@ footer{
     bottom: 10px;
 }
 
+address, address a {
+    color: #fff;
+    text-decoration: none;
+}
+
+address a img{
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+address img{
+    margin: 5px;
+    margin-right: 10px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b2c2e;
+    color: #fff;
+}
+
+footer p{
+    margin: 5px;
+}
+
+/* #currentYear{
+    marg
+} */
+
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 header{
     height: 60px;
@@ -87,6 +133,9 @@ header{
     margin-top: 10px;
     margin-left: 15px;
 }
+
+
+
 
 #profilePhoto img{
     width:200px;
@@ -154,9 +203,8 @@ section h2{
     padding-bottom: 0;
     text-align: center;
 }
-section{
-    /* padding: 10px; */
-    /* text-align: center; */
+section p{
+    margin: 10px 0;
 }
 
 .Technologies img{
@@ -172,7 +220,7 @@ section{
     /* Layout */
     .Container{
         max-width: 540px;
-        
+
     }
     header{
         height: 80px;
@@ -186,11 +234,23 @@ section{
         flex-direction: row;
         justify-content: space-between;
         text-align: center;
+
       }
 
 }
+
+@media (min-width: 600px){
+
+    main{
+        height: 130vh;
+    }
+}
+
+
+
+
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 768px){
+@media (min-width: 768px){ /*original = 768px*/
 
      /* Layout */
      .Container{
@@ -207,7 +267,23 @@ section{
         justify-content: space-between;
       }
 
+      .Flex6{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
 }
+
+
+/* @media (min-width: 700px){
+
+    main{
+        height: 130vh;
+    }
+} */
+
 /* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px){
 
@@ -232,6 +308,9 @@ section{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+      }
+      .About{
+        width: 500px;
       }
 
     header{
