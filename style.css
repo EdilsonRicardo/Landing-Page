@@ -91,19 +91,22 @@ address {
     bottom: 10px;
 }
 
-address, address a {
+address, address a, address .Flex5 {
     color: #fff;
     text-decoration: none;
+    font-size: 0.89em;
 }
 
 address a img{
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
     margin: 5px;
 }
 address img{
     margin: 5px;
     margin-right: 10px;
+    width: 23px;
+    height: 23px;
 }
 
 footer{
@@ -112,10 +115,13 @@ footer{
     justify-content: center;
     background-color: #2b2c2e;
     color: #fff;
+    font-size: 0.7em;
+    padding: 5px;
 }
 
-footer p{
-    margin: 5px;
+#currentYear{
+    margin-left: 5px;
+    /* margin: 5px; */
 }
 
 /* #currentYear{
